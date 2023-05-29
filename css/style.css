@@ -1,0 +1,409 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    list-style: none;
+    text-decoration: none;
+    overflow-x: hidden ;
+}
+body{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 1440px;
+    font-family: 'Poppins', sans-serif;
+}
+
+header.sticky{
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}  
+
+header.sticky ul li a{
+    color: #111;
+}
+
+header{
+    left: 0;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 15px;
+    margin-inline: 60px;
+}
+
+header ul li a:hover{
+    font-size: 18px;
+    transition: 0.4s;
+}
+
+.wrap{
+    background-image: url('/imagens/header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+}
+
+.logo img{
+    width: 215px;
+}
+
+
+
+.ask{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ask h2{
+    font-size: 32px;
+    color: #ffffff;
+}
+
+.ask button{
+    font-size: 15px;
+    align-items: flex-start;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+#buy{
+    background-color: #1174CF;
+    color: #ffffff;
+}
+
+.ask input{
+    width: 668px;
+    height: 67px;
+    font-size: 25px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+aside{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+.container ul{
+    gap: 20px;
+    display: flex;
+}
+
+aside #radar1{
+    position: relative;
+    display: inline-block;
+    width: 358px;
+    height: 220px;
+    background-image: url('../imagens/radar1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+aside #radar2{
+    position: relative;
+    display: inline-block;
+    width: 358px;
+    height: 220px;
+    background-image: url('../imagens/radar2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+aside #radar3{
+    position: relative;
+    display: inline-block;
+    width: 358px;
+    height: 220px;
+    background-image: url('../imagens/radar3.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+aside #radar4{
+    position: relative;
+    display: inline-block;
+    width: 358px;
+    height: 220px;
+    background-image: url('../imagens/radar4.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+aside #radar5{
+    position: relative;
+    display: inline-block;
+    width: 358px;
+    height: 220px;
+    background-image: url('../imagens/radar5.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+aside #radar6{
+    position: relative;
+    display: inline-block;
+    width: 358px;
+    height: 220px;
+    background-image: url('../imagens/radar6.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+aside h3{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: black;
+    max-width: 104px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-top: 20px;
+}
+
+#see_more{
+    background-color: #1174CF;
+    display: flex;
+    max-width: 404px;
+    height: 59px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 28px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.middle{
+    display: flex;
+    justify-content: center;
+}
+
+.middle2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.middle2 ul li{
+    height: 72px;
+    overflow: hidden;
+}
+
+.middle2 ul li a{
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.middle2 #bairro1{
+    position: relative;
+    display: inline-block;
+    width: 358px;
+    height: 220px;
+    background-image: url('../imagens/bairro1.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.middle2 #bairro2{
+    position: relative;
+    display: inline-block;
+    width: 358px;
+    height: 72px;
+    background-image: url('../imagens/bairro2.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.middle2 #bairro3{
+    position: relative;
+    display: inline-block;
+    width: 358px;
+    height: 72px;
+    background-image: url('../imagens/bairro3.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.middle2 #bairro4{
+    position: relative;
+    display: inline-block;
+    width: 358px;
+    height: 72px;
+    background-image: url('../imagens/bairro4.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.middle2 #bairro5{
+    position: relative;
+    display: inline-block;
+    width: 358px;
+    height: 72px;
+    background-image: url('../imagens/bairro5.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.middle2 #bairro6{
+    position: relative;
+    display: inline-block;
+    width: 358px;
+    height: 72px;
+    background-image: url('../imagens/bairro6.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#see_more2{
+    background-color: #1174CF;
+    display: flex;
+    width: 250px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    border: none;
+}
+
+footer{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #00063A;
+}
+
+footer h2{
+    color: #ffffff;
+}
+
+footer a{
+    display: flex;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.part3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.btn1 #btn_insta{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../imagens/instagram.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+.btn1 #btn_twitter{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../imagens/twitter\ \(1\).png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+.btn1 #btn_face{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../imagens/facebook.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+.btn1 #btn_yt{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('../imagens/youtube.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+.btn2 #btn_apple{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 20px;
+    background-image: url('../imagens/appstore\ 1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+.btn3 #btn_android{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 20px;
+    background-image: url('../imagens/playstore\ 1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
