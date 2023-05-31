@@ -59,7 +59,7 @@ header ul li a:hover{
 }
 
 .wrap{
-    background-image: url('/imagens/header.jpg');
+    background-image: url('../imagens/header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -96,11 +96,12 @@ header ul li a:hover{
 }
 
 .ask input{
+    font-family: 'Poppins', sans-serif;
     width: 668px;
     height: 67px;
     font-size: 25px;
     border: 1px solid black;
-    padding-left: 10px;
+    padding-left: 15px;
 }
 
 aside{
@@ -200,6 +201,36 @@ aside h3{
     margin-top: 20px;
 }
 
+aside #radar1:hover{
+    padding: 30px;
+    transition: 0.5s;
+}
+
+aside #radar2:hover{
+    padding: 30px;
+    transition: 0.5s;
+}
+
+aside #radar3:hover{
+    padding: 30px;
+    transition: 0.5s;
+}
+
+aside #radar4:hover{
+    padding: 30px;
+    transition: 0.5s;
+}
+
+aside #radar5:hover{
+    padding: 30px;
+    transition: 0.5s;
+}
+
+aside #radar6:hover{
+    padding: 30px;
+    transition: 0.5s;
+}
+
 #see_more{
     background-color: #1174CF;
     display: flex;
@@ -217,7 +248,12 @@ aside h3{
 
 .middle{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+}
+
+.middle video{
+    height: 431px;
+    
 }
 
 .middle2{
