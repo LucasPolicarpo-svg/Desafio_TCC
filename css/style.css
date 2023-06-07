@@ -5,10 +5,10 @@
     text-decoration: none;
     overflow-x: hidden ;
 }
+
 body{
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
-    box-sizing: border-box;
     max-width: 1440px;
     font-family: 'Poppins', sans-serif;
 }
@@ -29,7 +29,7 @@ header{
     width: 100%;
     z-index: 1000;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     transition: 0.5s;
 }
 
@@ -104,20 +104,21 @@ header ul li a:hover{
     padding-left: 15px;
 }
 
-aside{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
+.radar{
     margin: 40px;
 }
 
 .container ul{
-    gap: 20px;
     display: flex;
+    align-items: center;
+
 }
 
-aside #radar1{
+.container ul li{
+    margin: 20px;
+}
+
+.radar #radar1{
     position: relative;
     display: inline-block;
     width: 358px;
@@ -129,7 +130,7 @@ aside #radar1{
     padding: 10px 10px;
 }
 
-aside #radar2{
+.radar #radar2{
     position: relative;
     display: inline-block;
     width: 358px;
@@ -141,7 +142,7 @@ aside #radar2{
     padding: 10px 10px;
 }
 
-aside #radar3{
+.radar #radar3{
     position: relative;
     display: inline-block;
     width: 358px;
@@ -153,7 +154,7 @@ aside #radar3{
     padding: 10px 10px;
 }
 
-aside #radar4{
+.radar #radar4{
     position: relative;
     display: inline-block;
     width: 358px;
@@ -165,7 +166,7 @@ aside #radar4{
     padding: 10px 10px;
 }
 
-aside #radar5{
+.radar #radar5{
     position: relative;
     display: inline-block;
     width: 358px;
@@ -177,7 +178,7 @@ aside #radar5{
     padding: 10px 10px;
 }
 
-aside #radar6{
+.radar #radar6{
     position: relative;
     display: inline-block;
     width: 358px;
@@ -189,7 +190,7 @@ aside #radar6{
     padding: 10px 10px;
 }
 
-aside h3{
+.radar h3{
     text-decoration: none;
     color: #ffffff;
     background-color: black;
@@ -201,33 +202,33 @@ aside h3{
     margin-top: 20px;
 }
 
-aside #radar1:hover{
-    padding: 30px;
+.radar #radar1:hover{
+    padding: 15px;
     transition: 0.5s;
 }
 
-aside #radar2:hover{
-    padding: 30px;
+.radar #radar2:hover{
+    padding: 15px;
     transition: 0.5s;
 }
 
-aside #radar3:hover{
-    padding: 30px;
+.radar #radar3:hover{
+    padding: 15px;
     transition: 0.5s;
 }
 
-aside #radar4:hover{
-    padding: 30px;
+.radar #radar4:hover{
+    padding: 15px;
     transition: 0.5s;
 }
 
-aside #radar5:hover{
-    padding: 30px;
+.radar #radar5:hover{
+    padding: 15px;
     transition: 0.5s;
 }
 
-aside #radar6:hover{
-    padding: 30px;
+.radar #radar6:hover{
+    padding: 15px;
     transition: 0.5s;
 }
 
@@ -248,12 +249,11 @@ aside #radar6:hover{
 
 .middle{
     display: flex;
-    justify-content: space-around;
 }
 
-.middle video{
-    height: 431px;
-    
+.middle h2{
+    justify-content: space-between;
+
 }
 
 .middle2{
@@ -350,7 +350,8 @@ aside #radar6:hover{
 }
 
 footer{
-    margin-top: 10px;
+    margin-top: 100px;
+    padding-bottom: 15px;
     display: flex;
     justify-content: space-around;
     background-color: #00063A;
