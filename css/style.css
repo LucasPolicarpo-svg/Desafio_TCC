@@ -246,13 +246,35 @@ header ul li a:hover{
     margin-bottom: 20px;
 }
 
-.middle{
+.middle .container {
     display: flex;
 }
 
-.middle h2{
-    justify-content: space-between;
+.images {
+    display: flex;
+    justify-content: center;
+}
 
+.text {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #041022;
+    color: #ffffff;
+}
+
+.text h3{
+    text-transform: uppercase;
+    font-size: 25px;
+    border: 1px solid white;
+    padding: 15px;
+}
+
+.text p{
+    width: 250px;
+    text-align: justify;
+    font-size: 20px;
 }
 
 .middle2{
@@ -442,4 +464,34 @@ footer a{
     background-repeat: no-repeat;
     margin-top: 20px;
     padding: 10px 10px;
+}
+
+#scrolltop{
+    overflow-y: hidden;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s ease-in;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.top-button{
+    text-decoration: none;
+    cursor: pointer;
+    padding: 20px;
+    color: #222;
+}
+
+.icon-chevron-up img{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
