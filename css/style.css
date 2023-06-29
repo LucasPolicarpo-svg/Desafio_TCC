@@ -246,13 +246,18 @@ header ul li a:hover{
     margin-bottom: 20px;
 }
 
-.middle .container {
-    display: flex;
-}
-
-.images {
+.middle .container{
     display: flex;
     justify-content: center;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+}
+
+.middle .container .images{
+    display: flex;
 }
 
 .text {

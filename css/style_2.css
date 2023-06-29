@@ -201,7 +201,56 @@ header ul li a:hover{
     padding: 10px 10px;
 }
 
+.simule img{
+    width: 1350px;
+}
+
+#btn1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#simulefin{
+    background-color: #5E17EB;
+    width: 347px;
+    height: 49px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px #FF0000, 1px 1px 5px #0000FF;;
+}
+
+.info img{
+    margin-top: 70px;
+    width: 1350px;
+}
+
+#anuncie{
+    background-color: #5E17EB;
+    width: 347px;
+    height: 49px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 1px 1px 3px #FF0000, 1px 1px 5px #0000FF;;
+}
+
+#btn2{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: -60px 0 0 70px;
+}
+
 #scrolltop{
+    overflow-y: hidden;
     display: block;
     visibility: visible;
     opacity: 1;
@@ -209,8 +258,9 @@ header ul li a:hover{
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: rgba(255, 255, 255, 0.4);
-    border-radius: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
 }
 
 .top-button{
@@ -220,10 +270,12 @@ header ul li a:hover{
     color: #222;
 }
 
-.long-text{
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 40px;
-    background: rgba(0, 0, 0, 0.2);
+.icon-chevron-up img{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
