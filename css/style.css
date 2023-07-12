@@ -4,13 +4,13 @@
     list-style: none;
     text-decoration: none;
     overflow-x: hidden ;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
-    margin: 0;
-    padding: 0;
     max-width: 1440px;
-    font-family: 'Poppins', sans-serif;
 }
 
 header.sticky{
@@ -34,11 +34,13 @@ header{
 }
 
 header ul{
+    padding: 20px;
     position: relative;
     display: flex;
 }
 
 header ul li{
+    
     position: relative;
     list-style: none;
 }
@@ -58,12 +60,16 @@ header ul li a:hover{
     transition: 0.4s;
 }
 
+.mobile, .mobile-menu{
+    display: none;
+}
+
 .wrap{
     background-image: url('../imagens/header.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 700px;
+    height: 100vh;
 }
 
 .logo img{
@@ -86,7 +92,6 @@ header ul li a:hover{
 .ask button{
     font-size: 15px;
     align-items: flex-start;
-    font-family: 'Poppins', sans-serif;
     cursor: pointer;
 }
 
@@ -96,7 +101,6 @@ header ul li a:hover{
 }
 
 .ask input{
-    font-family: 'Poppins', sans-serif;
     width: 668px;
     height: 67px;
     font-size: 25px;
@@ -114,7 +118,7 @@ header ul li a:hover{
 }
 
 .container ul li{
-    margin: 20px;
+    margin: 30px;
 }
 
 .radar #radar1{
@@ -232,6 +236,7 @@ header ul li a:hover{
 }
 
 #see_more{
+    padding: 10px;
     background-color: #1174CF;
     display: flex;
     max-width: 404px;
@@ -239,11 +244,21 @@ header ul li a:hover{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    font-size: 28px;
-    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
     color: #ffffff;
     border: none;
-    margin-bottom: 20px;
+    margin: 0 0 20px 30px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px #0000FF;
+}
+
+.middle{
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.title{
+    margin-left: 30px;
 }
 
 .middle .container{
@@ -251,16 +266,13 @@ header ul li a:hover{
     justify-content: center;
 }
 
-.title{
-    display: flex;
-    flex-direction: column;
-}
-
 .middle .container .images{
     display: flex;
+    
 }
 
 .text {
+    padding-top: 30px;
     width: 35%;
     display: flex;
     flex-direction: column;
@@ -274,12 +286,30 @@ header ul li a:hover{
     font-size: 25px;
     border: 1px solid white;
     padding: 15px;
+    margin-bottom: 10px;
 }
 
 .text p{
     width: 250px;
     text-align: justify;
     font-size: 20px;
+}
+
+#more{
+    padding: 10px;
+    background-color: #1174CF;
+    display: flex;
+    max-width: 404px;
+    height: 59px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 25px;
+    color: #ffffff;
+    border: none;
+    margin:10px 0 20px 0;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px #0000FF;
 }
 
 .middle2{
@@ -370,13 +400,16 @@ header ul li a:hover{
     justify-content: center;
     cursor: pointer;
     font-size: 20px;
-    font-family: 'Poppins', sans-serif;
     color: #ffffff;
     border: none;
+    margin: 0 0 20px 30px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px #0000FF;
 }
 
 footer{
-    margin-top: 100px;
+    margin-top: 40px;
+    padding-top: 50px;
     padding-bottom: 15px;
     display: flex;
     justify-content: space-around;
@@ -499,4 +532,132 @@ footer a{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-width: 768px){
+    header ul li a{
+        position: relative;
+        display: inline-block;
+        margin: 0 10px;
+        color: #ffffff;
+        text-decoration: none;
+        font-size: 15px;
+        margin-inline: 10px;
+    }
+
+    .logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .ask{
+        margin-top: 100px;
+    }
+
+    .ask h2{
+        font-size: 20px;
+    }
+    .ask input{
+        width: 400px;
+        font-size: 19px;
+    }
+
+    .container ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .radar #radar{
+        width: 600px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    header{
+        background-color: #908DFF;
+        display: flex;    
+        justify-content: flex-start;
+        height: 98px;
+    }
+
+    header ul li a{
+        display: none;
+    }
+
+    .mobile{
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }    
+
+    .mobile a{
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+    .wrap{
+        background-image: url('../imagens/family.jpg');
+        background-size: 100vh;
+    }
+
+    .mobile-menu{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f2f2f2ee;
+        flex-direction: column;
+        width: 343px;
+        height: 420px;
+        margin: auto;
+        border-radius: 20px;
+        box-shadow: 3px 3px 5px #797777;
+        margin-top: -300px;
+    }
+
+    #top-title{
+        display: flex;
+        gap: 90px;
+        margin-bottom: 10px;
+        border-bottom: 4px solid #9B4FC9;
+    }
+
+    .mobile-menu form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .mobile-menu label{
+        margin-top: 20px;
+    }
+
+    .mobile-menu input{
+        width: 297px;
+        height: 42px;
+        margin-top: 10px;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    .mobile-menu input[type=submit]{
+        background-color: #9B4FC9;
+        margin-top: 40px;
+        border-radius: 10px;
+        width: 300px;
+        color: white;
+        font-size: 20px;
+    }
+
+    .ask, .logo{
+        display: none;
+    }
+
+    .middle .container .images{
+        flex-direction: column;
+        display: flex;
+    }
+
+    footer{
+        display: none;
+    }
 }
