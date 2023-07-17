@@ -10,26 +10,26 @@
 
     <body id="top">
         <header>
-                <ul>
-                    <li><a target="_blank" href="index_2.html">Comprar</a></li>
-                    <li><a href="">Alugar</a></li>
-                    <li><a href="">Lançamentos</a></li>
-                    <li><a href="">Financiamento</a></li>
-                    <li><a href="">Explorar</a></li>
-                    <li><a href="">Anunciar</a></li>
-                    <li><a href="">Registrar/Entrar</a></li>
-                </ul>
-                <div class="mobile">
-                    <div>
-                        <a href=""><img src="imagens/logo_white.png" alt=""></a>
-                    </div>
-                    <div>
-                        <a href="">Anunciar</a>
-                    </div>
-                    <div>
-                        <a href=""><img src="imagens/menu_mobile.png" alt=""></a>
-                    </div>
+            <div class="toggle" onclick="toggleMenu()"></div><!--toggle-->
+            <ul class="main_menu">
+                <li><a onclick="toggleMenu()" target="_blank" href="index_2.html">Comprar</a></li>
+                <li><a onclick="toggleMenu()" href="">Alugar</a></li>
+                <li><a onclick="toggleMenu()" target="_blank" href="index_4.html">Anunciar</a></li>
+                <li><a onclick="toggleMenu()" target="_blank" href="index_3.html">Financiamento</a></li>
+                <li><a onclick="toggleMenu()" href="">Explorar</a></li>
+                <li><a onclick="toggleMenu()" href="">Registrar/Entrar</a></li>
+            </ul><!--main_menu-->
+            <div class="mobile">
+                <div>
+                    <a href=""><img src="imagens/logo_white.png" alt=""></a>
                 </div>
+                <div>
+                    <a href="">Anunciar</a>
+                </div>
+                <div>
+                    <a onclick="toggleMenu()" href=""><img src="imagens/menu_mobile.png" alt=""></a>
+                </div>
+            </div>
         </header>
 
 
@@ -52,6 +52,8 @@
             </section><!--ask-->
         </main><!--wrap-->
         <div class="mobile-menu">
+            <span>O imóvel do jeito que você 
+                sonha está aqui !</span>
             <div id="top-title">
                 <h2>Comprar</h2>
                 <h2>Alugar</h2>
@@ -61,7 +63,12 @@
                 <input type="text" placeholder="Digite o nome da rua, bairro ou cidade">
 
                 <label for="">Tipo de imóvel</label>
-                <input type="text" placeholder="Todos imóveis">
+                <select name="" id="">
+                    <option value="">Apartamento</option>
+                    <option value="">Casa</option>
+                    <option value="">Terreno</option>
+                    <option value="">Chácara</option>
+                </select>
                 
                 <input type="submit" value="Buscar">
             </form>
@@ -180,9 +187,6 @@
                 </div><!--btn3-->
             </div>
         </footer>
-        <footer class="mobile">
-            
-        </footer>
 
         <div id="scrolltop">
             <a class="top-button" href="#top">
@@ -192,5 +196,6 @@
 
         <script src="js/scrool.js"></script>
         <script type="text/javascript" src="js/script.js"></script>
+        <script src="js/scroll_box.js"></script>
     </body>
 </html>

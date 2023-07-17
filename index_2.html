@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Comprar</title>
+        <link rel="stylesheet" href="css/splide.min.css">
         <link rel="stylesheet" href="css/style_2.css">
         <link rel="icon" type="image/png" href="imagens/home-button.png"/>
     </head>
@@ -11,7 +12,7 @@
 
         <header>
             <div class="logo_2">
-                <a href=""><img src="imagens/Black Monoline Real Estate Logo.png" alt="">
+                <a href="index.html"><img src="imagens/Black Monoline Real Estate Logo.png" alt="">
                 </a>
             </div><!--logo_2-->
 
@@ -25,15 +26,14 @@
             <ul>
                 <li><a href="">Comprar</a></li>
                 <li><a href="">Alugar</a></li>
-                <li><a href="">Lançamentos</a></li>
-                <li><a href="">Financiamento</a></li>
+                <li><a href="index_4.html">Anunciar</a></li>
+                <li><a href="index_3.html">Financiamento</a></li>
                 <li><a href="">Explorar</a></li>
-                <li><a href="">Anunciar</a></li>
                 <li><a href="">Registrar/Entrar</a></li>
             </ul>
         </header>
 
-        <section>
+        <section class="ask-map">
             <div class="maps-wraper">
                 <div class="maps-wraper3">
                     <div class="maps-wraper2">
@@ -42,7 +42,42 @@
                     </div><!--maps-wraper2-->   
                 </div><!--maps-wraper3--> 
             </div><!--maps-wraper-->
+
+            <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                              <img src="imagens/fundo1.jpg" alt="">
+                          </li>
+                          <li class="splide__slide">
+                              <img src="imagens/fundo2.jpg" alt="">
+                          </li>
+                          <li class="splide__slide">
+                              <img src="imagens/fundo3.jpg" alt="">
+                          </li>
+                          <li class="splide__slide">
+                              <img src="imagens/fundo3.jpg" alt="">
+                          </li>
+                          <li class="splide__slide">
+                              <img src="imagens/fundo3.jpg" alt="">
+                          </li>
+                          <li class="splide__slide">
+                              <img src="imagens/fundo3.jpg" alt="">
+                          </li>
+                          <li class="splide__slide">
+                              <img src="imagens/fundo3.jpg" alt="">
+                          </li>
+                          <li class="splide__slide">
+                              <img src="imagens/fundo3.jpg" alt="">
+                          </li>
+                          <li class="splide__slide">
+                              <img src="imagens/fundo3.jpg" alt="">
+                          </li>
+                      </ul>
+                </div>
+              </section>
         </section>
+        
         
         <section class="comprar">
             <div class="container">
@@ -71,7 +106,7 @@
                 <img src="imagens/Group 32.png" alt="">
             </div>
             <div id="btn1">
-                <button id="simulefin">Simule seu Financiamento</button>
+                <a id="simulefin" href="index_3.html" target="_blank">Simule seu Financiamento</a>
             </div>
         </section>
 
@@ -83,7 +118,7 @@
             </div>
 
             <div id="btn2">
-                <button id="anuncie">Anuncie seu Imóvel</button>
+                <a id="anunciefin" href="index_4.html" target="_blank">Anuncie seu Imóvel</a>
             </div>
         </section>
 
@@ -94,9 +129,54 @@
         </div>
 
         <footer>
-            
+            <div class="part1">
+                <h2>Empresa</h2>
+                <a href="">Sobre nós</a>
+                <a href="">Equipes</a>
+                <a href="">Lidenraça de vendas</a>
+                <a href="">Investidores</a>
+                <a href="">Junte-se como um capitador</a>
+                <a href="">Carreiras</a>
+                <a href="">contate-nos</a>
+                <a href="">Escritórios</a>
+                <a href="">redação</a>
+            </div><!--part1-->
+
+            <div class="part2">
+                <h2>Explorar</h2>
+                <a href="">Pesquisa de mercado</a>
+                <a href="">Diversidade</a>
+                <a href="">Blog</a>
+                <a href="">Comercial</a>
+                <a href="">Casas vendidas recentemente</a>
+                <a href="">Mapas do site</a>
+                <a href="">Guias de bairro</a>
+                <a href="">Simulador de Financiamento</a>
+                <a href="">Exclusividade de venda</a>
+                <a href="">Esportes e entretenimento</a>
+            </div><!--part2-->
+
+            <div class="part3">
+                <h2>Baixe nossos aplicativos</h2>
+                <div class="btn1">
+                    <a id="btn_insta" target="_blank" href=""></a>
+                    <a id="btn_twitter" target="_blank" href=""></a>
+                    <a id="btn_face" target="_blank" href=""></a>
+                    <a id="btn_yt" target="_blank" href=""></a>
+                </div><!--part3-->
+
+                <div class="btn2">
+                    <a id="btn_apple" target="_blank" href=""></a>
+                </div><!--btn2-->
+
+                <div class="btn3">
+                    <a id="btn_android" target="_blank" href=""></a>
+                </div><!--btn3-->
+            </div>
         </footer>
 
+        <script src="js/splide.min.js"></script>
+        <script src="js/carrossel.js"></script>
         <script src="js/scrool.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_kBJpPywINJAWHy8pEynV3HPjjEpTn3U"></script>
         <script src="js/maps.js"></script>

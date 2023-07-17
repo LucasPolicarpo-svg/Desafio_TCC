@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simule seu Financiamento</title>
+        <link rel="stylesheet" href="css/style_3.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="icon" type="image/png" href="imagens/home-button.png"/>
+    </head>
+    <body>
+        <header>
+            <div class="logo_2">
+                <a href=""><img src="imagens/Black Monoline Real Estate Logo.png" alt="">
+                </a>
+            </div><!--logo_2-->
+    
+            <div class="ask_02">
+                <input id="pesquisar" type="text" placeholder="Pesquisar">
+                <a id="ask_btt">
+                    <img id="lupa" src="imagens/icons8-loupe.svg" alt="">
+                </a>
+            </div><!--ask_02-->
+
+            <ul>
+                <li><a href="">Comprar</a></li>
+                <li><a href="">Alugar</a></li>
+                <li><a href="">Lançamentos</a></li>
+                <li><a href="">Financiamento</a></li>
+                <li><a href="">Explorar</a></li>
+                <li><a href="">Anunciar</a></li>
+                <li><a href="">Registrar/Entrar</a></li>
+            </ul>
+        </header>
+        
+        <section class="first">
+            <div>
+                <h1>Simulador Habitacional<br>Seu Crédito Facilitado</h1>
+                <p>Faça uma simulação de financiamento ou do empréstimo Real Fácil KICKIMÓVEIS e saiba mais detalhes sobre prazos e condições. Depois, basta visitar um Correspondente KICK Aqui (CKA) ou uma agência da KICK, para concluir o processo e ter acesso ao seu crédito.</p>
+            </div>
+            <div>
+                <img src="imagens/white_logo2.png">
+            </div>
+        </section><!--first-->
+
+        <section class="wrap">
+            <div class="container-sm title">
+                <h1>Dados Iniciais</h1>
+                <p>Informe qual é a sua opção de financiamento ou do empréstimo Real Fácil KICK e o valor desejado.</p>
+            </div><!--container-sm title-->
+            <div class="container-sm">
+                <form>
+                    <div class="form_box mb-3">
+                        <span>
+                            <label for="">Está é uma simulação para aquisição de imóvel residencial (novo ou usado) ou para obtenção de empréstimo com garantia do seu imóvel (Real Fácil KICK) destinado a pessoas físicas.</label>
+                        </span><!--form_box-->
+                    </div>
+      
+                    <div class="form_box mb-3">
+                        <span>
+                            <label for="">Este financiamento ou empréstimo Real Fácil KICK é para uma pessoa:</label>
+                        </span>
+                        <span>
+                            <input type="radio" name="i_pessoa" id="i_pessoa" checked>
+                            física
+                            <input type="radio" name="i_pessoa" id="i_pessoa">
+                            júridica 
+                        </span>
+                    </div><!--form_box-->
+      
+                    <div class="form_box mb-3">
+                        <span>
+                            <label for="">Qual tipo de financiamento ou empréstimo Real Fácil KICK você deseja?</label>
+                        </span>    
+                        <span>
+                            <select required>
+                                <option>Informe o tipo de financiamento</option>
+                                <option>Residencial</option>
+                                <option>Comercial</option>
+                                <option>Rural</option>
+                            </select>
+                        </span>
+                    </div><!--form_box-->
+      
+                    <div class="form_box mb-3">
+                        <span>
+                            <label for="">Selecione a opção de Financiamento/Empréstimo</label>
+                        </span>
+                        <span>
+                            <select required>
+                                <option>Informe a categoria</option>
+                                <option>Aquisição de Imóvel Novo</option>
+                                <option>Aquisição de Imóvel Usado</option>
+                                <option>Aquisição de Terreno</option>
+                                <option>Cosntrução</option>
+                                <option>Empréstimo Garantido por Imóvel</option>
+                                <option>Imóveis KICK</option>
+                                <option>Reforma e/ou Ampliação</option>
+                            </select>
+                        </span>
+                    </div><!--form_box-->
+      
+                    <div class="form_box mb-3">
+                        <span>
+                            <label>Valor aproximado do imóvel?</label>
+                        </span>
+                        <span>
+                            <input type="text" required>
+                        </span>
+                    </div><!--form_box-->
+      
+                    <div class="form_box mb-3">
+                        <span>
+                            <label>Em qual cidade está localizado o imóvel?</label>
+                        </span>
+                        <span>
+                            <select required>
+                                <option>SP</option>
+                                <option>UF</option>
+                                <option>AC</option>
+                                <option>AL</option>
+                                <option>AP</option>
+                                <option>BA</option>
+                                <option>CE</option>
+                                <option>DF</option>
+                                <option>ES</option>
+                                <option>GO</option>
+                                <option>MA</option>
+                                <option>MG</option>
+                                <option>MS</option>
+                                <option>MT</option>
+                                <option>PA</option>
+                                <option>PB</option>
+                                <option>PE</option>
+                                <option>PI</option>
+                                <option>PR</option>
+                                <option>RJ</option>
+                                <option>RN</option>
+                                <option>RO</option>
+                                <option>RR</option>
+                                <option>RS</option>
+                                <option>SC</option>
+                                <option>SE</option>
+                                <option>TO</option>
+                            </select>
+                            <select required>
+                                <option>ITANHAÉM</option>
+                                <option>PERUÍBE</option>
+                                <option>PRAIA GRANDE</option>
+                                <option>MONGÁGUA</option>
+                                <option>SANTOS</option>
+                            </select>
+                        </span>
+                    </div><!--form_box-->
+
+                    <div class="form_box mb-3">
+                        <span>
+                            <input type="checkbox">
+                            <label>Possuo imóvel nesta cidade</label>
+                        </span>
+                    </div><!--form_box-->
+                    
+                    <div class="form_box mb-3">
+                        <span>
+                            <input type="checkbox">
+                            <label>Portabilidade de Crédito Imobiliário
+                                Próxima etapa</label>
+                        </span>
+                    </div><!--form_box-->
+      
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-outline-primary">Próxima Etapa</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="wrap">
+            <div class="container-sm title">
+                <h1>Meus Dados</h1>
+                <p>Agora, informe seus dados pessoais.</p>
+            </div>
+            <div class="container-sm">
+                <form>
+                    <div class="form_box mb-3">
+                        <span>
+                            <label>Qual é o seu CPF?</label>
+                        </span>
+                        <span>
+                            <input type="text" required>
+                        </span>
+                    </div><!--form_box-->
+    
+                    <div class="form_box mb-3">
+                        <span>
+                            <label>Qual é o número do seu telefone celular?</label>
+                        </span>
+                        <span>
+                            <input type="text" required>
+                        </span>
+                    </div><!--form_box-->
+    
+                    <div class="form_box mb-3">
+                        <span>
+                            <label>Renda bruta familiar mensal?</label>
+                        </span>
+                        <span>
+                            <input type="text" required>
+                        </span>
+                    </div><!--form_box-->
+    
+                    <div class="form_box mb-3">
+                        <span>
+                            <label>Data de nascimento do proponente?</label>
+                        </span>
+                        <span>
+                            <input type="date" required>
+                        </span>
+                    </div><!--form_box-->
+    
+                    <div class="form_box mb-3">
+                        <span>
+                            <label>Marque as opções que se aplique no seu caso:</label>
+                        </span>
+                    </div><!--form_box-->
+    
+                    <div class="form_box mb-3">
+                        <span>
+                            <input type="checkbox">
+                            <label>Autorizo a KICK a coletar e armazenar meus dados pessoais, a enviar notificações e concordo com a <span>Política de Privacidade</span></label>
+                        </span>
+                        <span>
+                            <input type="checkbox">
+                            <label>Possui 3 anos de trabalho sob regime do FGTS, somando-se todos os períodos trabalhados?</label>
+                        </span>
+                        <span>
+                            <input type="checkbox">
+                            <label>Mais de um comprador ou dependente?</label>
+                        </span>
+                        <span>
+                            <input type="checkbox">
+                            <label>Você tem ou gostaria de ter relacionamento com a KICK?</label>
+                        </span>
+                    </div><!--form_box-->
+    
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-outline-primary">Próxima Etapa</button>
+                    </div>
+                </form>
+            </div>
+        </section><!--wrap-->
+
+        <section class="wrap">
+            <div class="container-sm title">
+                <h1>Opções</h1>
+                <p>Quanto maior o relacionamento com a Caixa, mais barato o valor do financiamento ou do empréstimo Real Fácil KICK.</p>
+            </div><!--form_box-->
+            <div class="container-sm">
+                <form>
+                    <div class="form_box mb-3">
+                        <span>
+                            <a href="">SBPE (Crédito Imobiliário Poupança KICK): Taxa Balcão</a>
+                        </span>
+                        <span>
+                            Para quem não pretende contratar outros produtos e serviços com a KICK.
+                        </span>
+                    </div><!--form_box-->
+    
+                    <div class="form_box mb-3">
+                        <span>
+                            <a href="">SBPE (TR, IPCA ou Tx FIXA): Taxa Balcão</a>
+                        </span>
+                        <span>
+                            Para quem não pretende contratar outros produtos e serviços com a KICK.
+                        </span>
+                    </div><!--form_box-->
+                </form>
+            </div><!--container-sm-->
+        </section><!--wrap-->
+
+        <section class="wrap">
+            <div class="container-sm">
+                <div class="form_box mt-3">
+                    <h1>Resultado</h1>
+                    <p>Confira o resultado da simulação. Se desejar, imprima a simulação e leve a uma agência.</p>
+                </div><!--form_box-->
+
+                <div class="form_box mt-3">
+                    <h3>SBPE - Poupança KICK - Aquisição de Imóvel Usado - Com Relacionamento</h3>
+                </div><!--form_box-->
+
+                <div class="form_box mt-3">
+                    <p>ATENÇÃO! Esta é uma simulação onde os juros calculados são apurados somando a taxa fixa de 3.89%a.a.' Efetiva mais a taxa variável em função do rendimento da poupança, vigente a cada vencimento da prestação, atualmente de 6.17%a.a.' Efetiva. Para os parâmetros da sua simulação, a menor taxa de juros resulta em uma prestação de R$ 4.014,78. Procure a CAIXA e conheça as taxas customizadas para o seu financiamento imobiliário.</p>
+                </div><!--form_box-->
+
+                <!-- <div class="form_box mt-3">
+                    <span>
+                        <h5>Valor do Imóvel</h5>
+                        <p>R$ 000000</p>
+                    </span>
+                    <span>
+                        <h5>Prazo Máximo</h5>
+                        <p>420 meses</p>
+                    </span>
+                    <span>
+                        <h5>Prazo Escolhido</h5>
+                        <p>420 meses</p>
+                    </span>
+                    <span>
+                        <h5>Cota máxima financiamento</h5>
+                        <p>80%</p>
+                    </span>
+                    <span>
+                        <h5>Valor da Entrada</h5>
+                        <p>R$ 0000000</p>
+                    </span>
+                    <span>
+                        <h5>Valor do Financiamento</h5>
+                        <p>R$ 0000000</p>
+                    </span>
+                </div>form_box -->
+
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary">Volte à estapa anterior</button>
+                    <button class="btn btn-clean">Veja a Documentação</button>
+                    <button class="btn btn-primary">Alterar</button>
+                </div>
+
+                <div class="d-grid gap-2">
+                    <a href="">Refazer a simulação</a>
+                </div>
+                
+            </div>
+        </section><!--wrap-->
+
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Anunciar Imóvel</title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style_4.css">
+        <link rel="icon" type="image/png" href="imagens/home-button.png"/>
+    </head>
+    <body>
+        <header>
+            <div class="logo_2">
+                <a href=""><img src="imagens/Black Monoline Real Estate Logo.png" alt="">
+                </a>
+            </div><!--logo_2-->
+    
+            <div class="ask_02">
+                <input id="pesquisar" type="text" placeholder="Pesquisar">
+                <a id="ask_btt">
+                    <img id="lupa" src="imagens/icons8-loupe.svg" alt="">
+                </a>
+            </div><!--ask_02-->
+
+            <ul>
+                <li><a href="">Comprar</a></li>
+                <li><a href="">Alugar</a></li>
+                <li><a href="">Lançamentos</a></li>
+                <li><a href="">Financiamento</a></li>
+                <li><a href="">Explorar</a></li>
+                <li><a href="">Anunciar</a></li>
+                <li><a href="">Registrar/Entrar</a></li>
+            </ul>
+        </header>
+
+        <section class="first">
+            <div>
+                <h1>Anunciar seu imóvel<br> Nunca foi tão fácil !</h1>
+                <p>Cadastre seu imóvel agora gastando apenas 15 minnutos, a plataforma KICK foi pensada para facilitar sua vida otimizar seu tempo!</p>
+            </div>
+        </section><!--first-->
+
+        <section class="wrap">
+            <div class="container-sm title">
+                <h1>Formulário de Cadastro de Imóveis</h1>
+                <p>Para fins de venda com intermediação de Corretor de Imóveis</p>
+            </div><!--container-sm title-->
+            <div class="container-lg">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputName">Nome Completo</label>
+                            <input type="text" class="form-control" id="inputName" placeholder="Digite seu nome completo" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputCpf">CPF , CNPJ ou Passaporte</label>
+                            <input type="text" class="form-control" id="inputCpf" placeholder="Apenas Números">
+                        </div>
+                    </div><!--form-row-->
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <div class="form-group">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Digite seu email">
+                            </div>
+                        </div><!--form-group-->
+                        <div class="form-group col-md-6">
+                            <label for="">Telefone</label>
+                            <input type="text" class="form-control" id="inputTel" placeholder="Apenas Números">
+                        </div>
+                    </div><!--form-row-->
+                    
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="inputCep">CEP</label>
+                            <input type="text" class="form-control" id="inputCep" placeholder="Apenas Números">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputEst">Estado</label>
+                            <input type="text" class="form-control" id="inputEst">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="inputCid">Cidade</label>
+                            <input type="text" class="form-control" id="inputCid">
+                        </div>
+                    </div><!--form-row-->
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEnd">Endereço</label>
+                            <input type="text" class="form-control" id="inputEnd" placeholder="Digite seu endereço com número">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputCom">Complemento</label>
+                            <input type="text" class="form-control" id="inputCom">
+                        </div>
+                    </div><!--form-row-->
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputTipo">Tipo de Imóvel</label>
+                            <select id="inputTipo" class="form-control">
+                                <option>Apartamento</option>
+                                <option>Casa</option>
+                                <option>Terreno</option>
+                                <option>Chácara</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputTipo">Subtipo de Imóvel</label>
+                            <select id="inputTipo" class="form-control">
+                                <option>Sobrado</option>
+                                <option>Sobreposta</option>
+                                <option>Edícula</option>
+                                <option>Condomínio</option>
+                            </select>
+                        </div>
+                    </div><!--form-row-->
+
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="inputAr1">Área Total (m²)</label>
+                            <input type="text" class="form-control" id="inputAr1" placeholder="Apenas Números">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputAr2">Área Construída (m²)</label>
+                            <input type="text" class="form-control" id="inputAr2">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputConV">Condomínio(Valor)</label>
+                            <input type="text" class="form-control" id="inputConV">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputIp">IPTU(Valor)</label>
+                            <input type="text" class="form-control" id="inputIp">
+                        </div>
+                    </div><!--form-row-->
+
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="inputQua">Quartos</label>
+                            <input type="text" class="form-control" id="inputQua" placeholder="Apenas Números">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputSui">Suítes</label>
+                            <input type="text" class="form-control" id="inputSui">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputBan">Banheiros</label>
+                            <input type="text" class="form-control" id="inputBan">
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputCoz">Cozinha</label>
+                            <select id="inputCoz" class="form-control">
+                                <option>Padrão</option>
+                                <option>Americana</option>
+                            </select>
+                        </div>
+                    </div><!--form-row-->
+
+
+                    <div class="form-group">
+                        <label for="inputDel">Descrições Adicionais</label>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                            Piscina
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-check-input" type="checkbox" id="gridCheck2">
+                            <label class="form-check-label" for="gridCheck2">
+                            Churrasqueira
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-check-input" type="checkbox" id="gridCheck3">
+                            <label class="form-check-label" for="gridCheck3">
+                            Edícula
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-check-input" type="checkbox" id="gridCheck4">
+                            <label class="form-check-label" for="gridCheck4">
+                            Ar-Condicionado
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-check-input" type="checkbox" id="gridCheck5">
+                            <label class="form-check-label" for="gridCheck5">
+                            Laje
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-check-input" type="checkbox" id="gridCheck6">
+                            <label class="form-check-label" for="gridCheck6">
+                            Varanda Gourmet
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-check-input" type="checkbox" id="gridCheck7">
+                            <label class="form-check-label" for="gridCheck7">
+                            Aceita PET
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-check-input" type="checkbox" id="gridCheck8">
+                            <label class="form-check-label" for="gridCheck8">
+                            Próximo à praia
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-check-input" type="checkbox" id="gridCheck9">
+                            <label class="form-check-label" for="gridCheck9">
+                            Novo
+                            </label>
+                        </div>
+                    </div><!--form-row-->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input class="form-check-input" type="checkbox" id="gridCheck10">
+                            <label class="form-check-label" for="gridCheck10">
+                            Reformada
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-check-input" type="checkbox" id="gridCheck10">
+                            <label class="form-check-label" for="gridCheck10">
+                            Armarios Embutidos
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-check-input" type="checkbox" id="gridCheck10">
+                            <label class="form-check-label" for="gridCheck10">
+                            Porcelanato
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-check-input" type="checkbox" id="gridCheck10">
+                            <label class="form-check-label" for="gridCheck10">
+                            Sacada Gourmet
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-check-input" type="checkbox" id="gridCheck10">
+                            <label class="form-check-label" for="gridCheck10">
+                            Dormitório Térreo
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-check-input" type="checkbox" id="gridCheck10">
+                            <label class="form-check-label" for="gridCheck10">
+                            Esquadrias de Alúminio
+                            </label>
+                        </div>
+                        <div class="form-group">
+                            <input class="form-check-input" type="checkbox" id="gridCheck10">
+                            <label class="form-check-label" for="gridCheck10">
+                            Lavanderia
+                            </label>
+                        </div>
+                    </div><!--form-row-->
+
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Escreva observações adicionais</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+
+                    <button type="button" class="btn btn-primary btn-lg">Enviar Formulário</button>
+                </form>
+                
+            </div><!--cotnainer-sm-->
+        </section><!--wrap-->
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/jquery-3.7.0.js"></script>
+        <script src="js/jquery.mask.js"></script>
+        <script src="js/mascara.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/validacao.js"></script>
+    </body>
+</html>
