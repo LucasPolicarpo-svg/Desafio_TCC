@@ -22,15 +22,23 @@
                 </a>
             </div><!--ask_02-->
 
-            <ul>
-                <li><a href="">Comprar</a></li>
-                <li><a href="">Alugar</a></li>
-                <li><a href="">Lançamentos</a></li>
-                <li><a href="">Financiamento</a></li>
-                <li><a href="">Explorar</a></li>
-                <li><a href="">Anunciar</a></li>
-                <li><a href="">Registrar/Entrar</a></li>
+            <div class="toggle" onclick="toggleMenu()"></div><!--toggle-->
+            <ul class="main_menu">
+                <li><a onclick="toggleMenu()" target="_blank" href="index_2.html">Comprar</a></li>
+                <li><a onclick="toggleMenu()" href="">Alugar</a></li>
+                <li><a onclick="toggleMenu()" target="_blank" href="index_4.html">Anunciar</a></li>
+                <li><a target="_blank" href="index_3.html">Financiamento</a></li>
+                <li><a onclick="toggleMenu()" href="">Explorar</a></li>
+                <li><a onclick="toggleMenu()" target="_blank" href="index_5.html">Registrar/Entrar</a></li>
             </ul>
+            <div class="mobile">
+                <div>
+                    <a href="">Anunciar</a>
+                </div>
+                <div>
+                    <a href=""><img src="imagens/logo_white.png" alt=""></a>
+                </div>
+            </div>
         </header>
         
         <section class="first">
@@ -334,7 +342,62 @@
         </section><!--wrap-->
 
 
+        <footer>
+            <div class="part1">
+                <h2>Empresa</h2>
+                <a href="">Sobre nós</a>
+                <a href="">Equipes</a>
+                <a href="">Lidenraça de vendas</a>
+                <a href="">Investidores</a>
+                <a href="">Junte-se como um capitador</a>
+                <a href="">Carreiras</a>
+                <a href="">contate-nos</a>
+                <a href="">Escritórios</a>
+                <a href="">redação</a>
+            </div><!--part1-->
+
+            <div class="part2">
+                <h2>Explorar</h2>
+                <a href="">Pesquisa de mercado</a>
+                <a href="">Diversidade</a>
+                <a href="">Blog</a>
+                <a href="">Comercial</a>
+                <a href="">Casas vendidas recentemente</a>
+                <a href="">Mapas do site</a>
+                <a href="">Guias de bairro</a>
+                <a href="">Simulador de Financiamento</a>
+                <a href="">Exclusividade de venda</a>
+                <a href="">Esportes e entretenimento</a>
+            </div><!--part2-->
+
+            <div class="part3">
+                <h2>Baixe nossos aplicativos</h2>
+                <div class="btn1">
+                    <a id="btn_insta" target="_blank" href=""></a>
+                    <a id="btn_twitter" target="_blank" href=""></a>
+                    <a id="btn_face" target="_blank" href=""></a>
+                    <a id="btn_yt" target="_blank" href=""></a>
+                </div><!--part3-->
+
+                <div class="btn2">
+                    <a id="btn_apple" target="_blank" href=""></a>
+                </div><!--btn2-->
+
+                <div class="btn3">
+                    <a id="btn_android" target="_blank" href=""></a>
+                </div><!--btn3-->
+            </div>
+        </footer>
+
+        <div id="scrolltop">
+            <a class="top-button" href="#top">
+                <i class="icon-chevron-up"><img src="imagens/up-arrow.png" alt=""></i>
+            </a>
+        </div>
+
+        
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/scrool.js"></script>
     </body>
 </html>

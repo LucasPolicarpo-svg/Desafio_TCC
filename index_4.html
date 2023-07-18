@@ -22,15 +22,24 @@
                 </a>
             </div><!--ask_02-->
 
-            <ul>
-                <li><a href="">Comprar</a></li>
-                <li><a href="">Alugar</a></li>
-                <li><a href="">Lançamentos</a></li>
-                <li><a href="">Financiamento</a></li>
-                <li><a href="">Explorar</a></li>
-                <li><a href="">Anunciar</a></li>
-                <li><a href="">Registrar/Entrar</a></li>
+            <div class="toggle" onclick="toggleMenu()"></div><!--toggle-->
+            <ul class="main_menu">
+                <li><a onclick="toggleMenu()" target="_blank" href="">Comprar</a></li>
+                <li><a onclick="toggleMenu()" href="">Alugar</a></li>
+                <li><a onclick="toggleMenu()" target="_blank" href="index_4.html">Anunciar</a></li>
+                <li><a onclick="toggleMenu()" target="_blank" href="index_3.html">Financiamento</a></li>
+                <li><a onclick="toggleMenu()" href="">Explorar</a></li>
+                <li><a onclick="toggleMenu()" target="_blank" href="index_5.html">Registrar/Entrar</a></li>
             </ul>
+
+            <div class="mobile">
+                <div>
+                    <a href="">Anunciar</a>
+                </div>
+                <div>
+                    <a href=""><img src="imagens/logo_white.png" alt=""></a>
+                </div>
+            </div><!--mobile-->
         </header>
 
         <section class="first">
@@ -45,7 +54,7 @@
                 <h1>Formulário de Cadastro de Imóveis</h1>
                 <p>Para fins de venda com intermediação de Corretor de Imóveis</p>
             </div><!--container-sm title-->
-            <div class="container-lg">
+            <div class="container">
                 <form>
                     <div class="form-row">
                         <div class="form-group col-md-6">
@@ -54,7 +63,7 @@
                         </div>
                         <div class="form-group col-md-6">
                             <label for="inputCpf">CPF , CNPJ ou Passaporte</label>
-                            <input type="text" class="form-control" id="inputCpf" placeholder="Apenas Números">
+                            <input type="text" class="form-control" id="inputCpf" placeholder="000.000.000-00" required>
                         </div>
                     </div><!--form-row-->
 
@@ -62,45 +71,53 @@
                         <div class="form-group col-md-6">
                             <div class="form-group">
                                 <label for="inputEmail4">Email</label>
-                                <input type="email" class="form-control" id="inputEmail4" placeholder="Digite seu email">
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Digite seu email" required>
                             </div>
                         </div><!--form-group-->
                         <div class="form-group col-md-6">
                             <label for="">Telefone</label>
-                            <input type="text" class="form-control" id="inputTel" placeholder="Apenas Números">
+                            <input type="text" class="form-control" id="inputTel" placeholder="(00) 00000-0000" required>
                         </div>
                     </div><!--form-row-->
                     
                     <div class="form-row">
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-3>
                             <label for="inputCep">CEP</label>
-                            <input type="text" class="form-control" id="inputCep" placeholder="Apenas Números">
+                            <input type="text" onblur="pesquisa_cep(this.value)" class="form-control" id="inputCep" placeholder="00000-000" required>
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-group col-md-3">
                             <label for="inputEst">Estado</label>
-                            <input type="text" class="form-control" id="inputEst">
+                            <input type="text" class="form-control" id="inputEst" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputCid">Cidade</label>
+                            <input type="text" class="form-control" id="inputCid" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputBai">Bairro</label>
+                            <input type="text" class="form-control" id="inputBai" required>
+                        </div>
+                    </div><!--form-row-->
+
+                    <div class="form-row">
+                        <div class="form-group col-md-5">
+                            <label for="inputEnd">Endereço</label>
+                            <input type="text" class="form-control" id="inputEnd" placeholder="Digite seu endereço com número" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="inputNum">Número</label>
+                            <input type="text" class="form-control" id="inputNum" placeholder="Apenas números" required>
                         </div>
                         <div class="form-group col-md-4">
-                            <label for="inputCid">Cidade</label>
-                            <input type="text" class="form-control" id="inputCid">
-                        </div>
-                    </div><!--form-row-->
-
-                    <div class="form-row">
-                        <div class="form-group col-md-6">
-                            <label for="inputEnd">Endereço</label>
-                            <input type="text" class="form-control" id="inputEnd" placeholder="Digite seu endereço com número">
-                        </div>
-                        <div class="form-group col-md-6">
                             <label for="inputCom">Complemento</label>
-                            <input type="text" class="form-control" id="inputCom">
+                            <input type="text" class="form-control" id="inputCom" required>
                         </div>
                     </div><!--form-row-->
 
                     <div class="form-row">
                         <div class="form-group col-md-6">
-                            <label for="inputTipo">Tipo de Imóvel</label>
-                            <select id="inputTipo" class="form-control">
+                            <label for="inputTip1">Tipo de Imóvel</label>
+                            <select id="inputTip1" class="form-control" required>
                                 <option>Apartamento</option>
                                 <option>Casa</option>
                                 <option>Terreno</option>
@@ -108,8 +125,8 @@
                             </select>
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="inputTipo">Subtipo de Imóvel</label>
-                            <select id="inputTipo" class="form-control">
+                            <label for="inputTip2">Subtipo de Imóvel</label>
+                            <select id="inputTip2" class="form-control" required>
                                 <option>Sobrado</option>
                                 <option>Sobreposta</option>
                                 <option>Edícula</option>
@@ -270,17 +287,73 @@
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
 
-                    <button type="button" class="btn btn-primary btn-lg">Enviar Formulário</button>
+                    <button onclick="validacao()" type="button" class="btn btn-primary btn-lg">Enviar Formulário</button>
                 </form>
                 
             </div><!--cotnainer-sm-->
         </section><!--wrap-->
 
+        <footer>
+            <div class="part1">
+                <h2>Empresa</h2>
+                <a href="">Sobre nós</a>
+                <a href="">Equipes</a>
+                <a href="">Lidenraça de vendas</a>
+                <a href="">Investidores</a>
+                <a href="">Junte-se como um capitador</a>
+                <a href="">Carreiras</a>
+                <a href="">contate-nos</a>
+                <a href="">Escritórios</a>
+                <a href="">redação</a>
+            </div><!--part1-->
+
+            <div class="part2">
+                <h2>Explorar</h2>
+                <a href="">Pesquisa de mercado</a>
+                <a href="">Diversidade</a>
+                <a href="">Blog</a>
+                <a href="">Comercial</a>
+                <a href="">Casas vendidas recentemente</a>
+                <a href="">Mapas do site</a>
+                <a href="">Guias de bairro</a>
+                <a href="">Simulador de Financiamento</a>
+                <a href="">Exclusividade de venda</a>
+                <a href="">Esportes e entretenimento</a>
+            </div><!--part2-->
+
+            <div class="part3">
+                <h2>Baixe nossos aplicativos</h2>
+                <div class="btn1">
+                    <a id="btn_insta" target="_blank" href=""></a>
+                    <a id="btn_twitter" target="_blank" href=""></a>
+                    <a id="btn_face" target="_blank" href=""></a>
+                    <a id="btn_yt" target="_blank" href=""></a>
+                </div><!--part3-->
+
+                <div class="btn2">
+                    <a id="btn_apple" target="_blank" href="https://www.apple.com/br/"></a>
+                </div><!--btn2-->
+
+                <div class="btn3">
+                    <a id="btn_android" target="_blank" href="https://play.google.com/store/games?device=windows"></a>
+                </div><!--btn3-->
+            </div>
+        </footer>
+
+        <div id="scrolltop">
+            <a class="top-button" href="#top">
+                <i class="icon-chevron-up"><img src="imagens/up-arrow.png" alt=""></i>
+            </a>
+        </div>
+
+
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/jquery-3.7.0.js"></script>
         <script src="js/jquery.mask.js"></script>
+        <script src="js/viacep.js"></script>
         <script src="js/mascara.js"></script>
         <script src="js/script.js"></script>
+        <script src="js/scrool.js"></script>
         <script src="js/validacao.js"></script>
     </body>
 </html>

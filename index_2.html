@@ -23,14 +23,23 @@
                 </a>
             </div><!--ask_02-->
 
-            <ul>
-                <li><a href="">Comprar</a></li>
-                <li><a href="">Alugar</a></li>
-                <li><a href="index_4.html">Anunciar</a></li>
-                <li><a href="index_3.html">Financiamento</a></li>
-                <li><a href="">Explorar</a></li>
-                <li><a href="">Registrar/Entrar</a></li>
+            <div class="toggle" onclick="toggleMenu()"></div><!--toggle-->
+            <ul class="main_menu">
+                <li><a onclick="toggleMenu()" target="_blank" href="index_2.html">Comprar</a></li>
+                <li><a onclick="toggleMenu()" href="">Alugar</a></li>
+                <li><a onclick="toggleMenu()" target="_blank" href="index_4.html">Anunciar</a></li>
+                <li><a onclick="toggleMenu()" target="_blank" href="index_3.html">Financiamento</a></li>
+                <li><a onclick="toggleMenu()" href="">Explorar</a></li>
+                <li><a onclick="toggleMenu()" target="_blank" href="index_5.html">Registrar/Entrar</a></li>
             </ul>
+            <div class="mobile">
+                <div>
+                    <a href="">Anunciar</a>
+                </div>
+                <div>
+                    <a href=""><img src="imagens/logo_white.png" alt=""></a>
+                </div>
+            </div>
         </header>
 
         <section class="ask-map">
@@ -43,7 +52,7 @@
                 </div><!--maps-wraper3--> 
             </div><!--maps-wraper-->
 
-            <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+            <div id="image-carousel" class="splide" aria-label="Beautiful Images">
                 <div class="splide__track">
                       <ul class="splide__list">
                           <li class="splide__slide">
@@ -53,35 +62,41 @@
                               <img src="imagens/fundo2.jpg" alt="">
                           </li>
                           <li class="splide__slide">
-                              <img src="imagens/fundo3.jpg" alt="">
+                              <img src="imagens/fundo1.jpg" alt="">
                           </li>
                           <li class="splide__slide">
-                              <img src="imagens/fundo3.jpg" alt="">
+                              <img src="imagens/fundo2.jpg" alt="">
                           </li>
                           <li class="splide__slide">
-                              <img src="imagens/fundo3.jpg" alt="">
+                              <img src="imagens/fundo1.jpg" alt="">
                           </li>
                           <li class="splide__slide">
-                              <img src="imagens/fundo3.jpg" alt="">
+                              <img src="imagens/fundo2.jpg" alt="">
                           </li>
                           <li class="splide__slide">
-                              <img src="imagens/fundo3.jpg" alt="">
+                              <img src="imagens/fundo1.jpg" alt="">
                           </li>
                           <li class="splide__slide">
-                              <img src="imagens/fundo3.jpg" alt="">
+                              <img src="imagens/fundo2.jpg" alt="">
                           </li>
                           <li class="splide__slide">
-                              <img src="imagens/fundo3.jpg" alt="">
+                              <img src="imagens/fundo1.jpg" alt="">
+                          </li>
+                          <li class="splide__slide">
+                              <img src="imagens/fundo2.jpg" alt="">
                           </li>
                       </ul>
                 </div>
-              </section>
+            </div>
         </section>
         
         
         <section class="comprar">
             <div class="container">
-                <h2>Categorias</h2>
+                <div>
+                    <h2>Categorias</h2>
+                </div>
+    
                 <div>
                     <ul>
                         <li><a id="comprar1" href=""></a></li>
@@ -121,12 +136,6 @@
                 <a id="anunciefin" href="index_4.html" target="_blank">Anuncie seu Imóvel</a>
             </div>
         </section>
-
-        <div id="scrolltop">
-            <a class="top-button" href="#top">
-                <i class="icon-chevron-up"><img src="imagens/up-arrow.png" alt=""></i>
-            </a>
-        </div>
 
         <footer>
             <div class="part1">
@@ -174,6 +183,12 @@
                 </div><!--btn3-->
             </div>
         </footer>
+
+        <div id="scrolltop">
+            <a class="top-button" href="#top">
+                <i class="icon-chevron-up"><img src="imagens/up-arrow.png" alt=""></i>
+            </a>
+        </div>
 
         <script src="js/splide.min.js"></script>
         <script src="js/carrossel.js"></script>

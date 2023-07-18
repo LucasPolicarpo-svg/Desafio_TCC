@@ -11,6 +11,10 @@ body{
     max-width: 1440px;
 }
 
+.mobile, .mobile-menu{
+    display: none;
+}
+
 header{
     position: fixed;
     top: 0;
@@ -75,6 +79,7 @@ header.sticky ul li a{
 }
 
 header ul{
+    margin-right: 40px;
     margin-top: 20px;
     position: relative;
     display: flex;
@@ -160,4 +165,259 @@ header ul li a:hover{
 
 button{
     width: 250px;
+}
+
+footer{
+    margin-top: 40px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #00063A;
+}
+
+footer h2{
+    color: #ffffff;
+}
+
+footer a{
+    display: flex;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.part3{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.btn1 #btn_insta{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('../imagens/instagram.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+.btn1 #btn_twitter{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('../imagens/twitter\ \(1\).png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+.btn1 #btn_face{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('../imagens/facebook.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+.btn1 #btn_yt{
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url('../imagens/youtube.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+.btn2 #btn_apple{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    background-image: url('../imagens/appstore\ 1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+.btn3 #btn_android{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 60px;
+    background-image: url('../imagens/playstore\ 1.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    padding: 10px 10px;
+}
+
+#scrolltop{
+    overflow-y: hidden;
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity 0.5s ease-in;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.top-button{
+    text-decoration: none;
+    cursor: pointer;
+    padding: 20px;
+    color: #222;
+}
+
+.icon-chevron-up img{
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 425px){
+    header{
+        background-color: #908DFF;
+        display: flex;    
+        justify-content: flex-start;
+        align-items: center;
+        height: 98px;
+    }
+
+    header.sticky{
+        background-color: #33172c;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }  
+
+    header ul li a:hover{
+        font-size: 30px;
+    }
+
+    .logo_2,.ask_02{
+        display: none;
+    }
+
+    .main_menu{
+        position: fixed;
+        top: 90px;
+        left: -140%;
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #ffffff;
+        transition: 0.5s;
+        z-index: 999;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .main_menu a{
+        margin-bottom: 10px;
+        font-size: 30px;
+        color: black;
+    }
+
+    .main_menu.active{
+        left: 0;
+    }
+    .toggle{
+        width: 158px;
+        height: 60px;
+        background: url('../imagens/menu_mobile.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 158px;
+        margin: 0px 10px;
+        cursor: pointer;
+    }
+    .toggle.active{
+        background: url('../imagens/menu_mobile.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 158px;
+        cursor: pointer;
+    }
+
+    .mobile{
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 18px;
+    }    
+
+    .mobile a{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+    .first{
+        flex-direction: column;
+        margin-top: 98px;
+    }
+
+    .first h1{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .first p{
+        text-align: center;
+    }
+
+    .first img{
+        display: none;
+    }
+
+    .wrap{
+        flex-direction: column;
+    }
+
+    .form_box{
+        align-items: center;
+        text-align: center;
+    }
+    
+    .d-grid{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .part1,.part2,.part3{
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #scrolltop{
+        display: none;
+    }
 }

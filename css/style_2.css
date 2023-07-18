@@ -7,6 +7,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    max-width: 1440px;
+}
 
 header{
     position: fixed;
@@ -32,6 +35,10 @@ header input:not(#ask_btt){
     border: 0;   
     outline: none;
     font-size: 18px;
+}
+
+.mobile, .mobile-menu{
+    display: none;
 }
 
 .ask_02{
@@ -74,6 +81,7 @@ header.sticky ul li a{
 header ul{
     position: relative;
     display: flex;
+    margin-right: 40px;
 }
 
 header ul li{
@@ -132,16 +140,16 @@ header ul li a:hover{
 
 .splide{
     width: 50%;
-    height: 90vh;
+    height: 90%;
 }
 
 .splide__slide img {
     width: 100%;
-    height: auto;
-    margin-top: 60px;
-  }
-  
+    margin-top: 48px;
+}
+
 .comprar{
+    display: flex;
     width: 100%;
     margin: 40px;
 }
@@ -207,6 +215,7 @@ header ul li a:hover{
 }
 
 .tour_virtual{
+    display: flex;
     width: 100%;
     margin: 40px;
 }
@@ -222,6 +231,7 @@ header ul li a:hover{
     margin-top: 20px;
     padding: 10px 10px;
 }
+
 
 .simule img{
     width: 1350px;
@@ -335,10 +345,10 @@ footer a{
 .btn1 #btn_insta{
     position: relative;
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     background-image: url('../imagens/instagram.png');
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     margin-top: 20px;
     padding: 10px 10px;
@@ -347,10 +357,10 @@ footer a{
 .btn1 #btn_twitter{
     position: relative;
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     background-image: url('../imagens/twitter\ \(1\).png');
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     margin-top: 20px;
     padding: 10px 10px;
@@ -359,10 +369,10 @@ footer a{
 .btn1 #btn_face{
     position: relative;
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     background-image: url('../imagens/facebook.png');
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     margin-top: 20px;
     padding: 10px 10px;
@@ -371,10 +381,10 @@ footer a{
 .btn1 #btn_yt{
     position: relative;
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     background-image: url('../imagens/youtube.png');
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     margin-top: 20px;
     padding: 10px 10px;
@@ -384,9 +394,9 @@ footer a{
     position: relative;
     display: inline-block;
     width: 200px;
-    height: 20px;
+    height: 60px;
     background-image: url('../imagens/appstore\ 1.png');
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     margin-top: 20px;
     padding: 10px 10px;
@@ -396,10 +406,170 @@ footer a{
     position: relative;
     display: inline-block;
     width: 200px;
-    height: 20px;
+    height: 60px;
     background-image: url('../imagens/playstore\ 1.png');
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     margin-top: 20px;
     padding: 10px 10px;
+}
+
+@media screen and (max-width: 425px){
+    header{
+        background-color: #908DFF;
+        display: flex;    
+        justify-content: flex-start;
+        align-items: center;
+        height: 98px;
+    }
+
+    header.sticky{
+        background-color: #33172c;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    }  
+
+    header ul li a:hover{
+        font-size: 30px;
+    }
+
+    .logo_2,.ask_02{
+        display: none;
+    }
+
+    .main_menu{
+        position: fixed;
+        top: 90px;
+        left: -140%;
+        display: block;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #ffffff;
+        transition: 0.5s;
+        z-index: 999;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    .main_menu a{
+        margin-bottom: 10px;
+        font-size: 30px;
+        color: black;
+    }
+
+    .main_menu.active{
+        left: 0;
+    }
+    .toggle{
+        width: 158px;
+        height: 60px;
+        background: url('../imagens/menu_mobile.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 158px;
+        margin: 0px 10px;
+        cursor: pointer;
+    }
+    .toggle.active{
+        background: url('../imagens/menu_mobile.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 158px;
+        cursor: pointer;
+    }
+
+    .mobile{
+        overflow: hidden;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 18px;
+    }    
+
+    .mobile a{
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+    .ask-map{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 44px;
+    }
+
+    .maps-wraper{
+        width: 100%;
+    }
+
+    .splide{
+        margin-top: -110px;
+        width: 100%;
+    }
+
+    .container ul{
+        flex-direction: column;
+    }
+
+    .tour_virtual #tour{
+        background-image: url('../imagens/tour_virtual_mobile.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        width: 280px;
+        height: 100vh;
+    }
+
+    .simule img{
+        display: none;
+    }
+
+    .simule{
+        background-image: url('../imagens/simule_finan2.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+    }
+
+    .info img{
+        display: none;
+    }
+    
+    #btn1{
+        margin: -80px 0 50px 0;
+    }
+
+    #simulefin{
+        width: 230px;
+        height: 100px;
+        text-align: center;
+    }
+
+    #btn2{
+        margin: 0;
+        justify-content: center;
+    }
+
+    #anunciefin{
+        width: 230px;
+        height: 100px;
+        text-align: center;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .part1,.part2,.part3{
+        padding-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #scrolltop{
+        display: none;
+    }
 }
