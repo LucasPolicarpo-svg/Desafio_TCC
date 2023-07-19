@@ -9,6 +9,7 @@
 
 body{
     max-width: 1440px;
+    margin: 0 auto;
 }
 
 header{
@@ -264,7 +265,17 @@ footer a{
     justify-content: center;
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 768px){
+    .ask_02{
+        display: none;
+    }
+
+    button{
+        margin: 15px 250px;
+    }
+}
+
+@media screen and (max-width: 576px){
     header{
         background-color: #908DFF;
         display: flex;    

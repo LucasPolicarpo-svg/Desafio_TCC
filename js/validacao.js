@@ -11,8 +11,14 @@ function validacao(){
     let endereco = document.getElementById("inputEnd");
     let numero = document.getElementById("inputNum");
     let complemento = document.getElementById("inputCom");
-    let tipo = document.getElementById("inputTip1");
-    let subtipo = document.getElementById("inputTip2");
+    let areat = document.getElementById("inputAr1");
+    let areac = document.getElementById("inputAr2");
+    let cond = document.getElementById("inputConV");
+    let iptu = document.getElementById("inputIp");
+    let quarto = document.getElementById("inputQua");
+    let suite = document.getElementById("inputSui");
+    let banheiro = document.getElementById("inputBan");
+    let descricao = document.getElementById("exampleFormControlTextarea1");
     
     
 
@@ -27,8 +33,14 @@ function validacao(){
     input_style(endereco, "#f45656", "#008000");
     input_style(numero, "#f45656", "#008000");
     input_style(complemento, "#f45656", "#008000");
-    input_style(tipo, "#f45656", "#008000");
-    input_style(subtipo, "#f45656", "#008000");
+    input_style(areat, "#f45656", "#008000");
+    input_style(areac, "#f45656", "#008000");
+    input_style(cond, "#f45656", "#008000");
+    input_style(iptu, "#f45656", "#008000");
+    input_style(quarto, "#f45656", "#008000");
+    input_style(suite, "#f45656", "#008000");
+    input_style(banheiro, "#f45656", "#008000");
+    input_style(descricao, "#f45656", "#008000");
     
     
 }

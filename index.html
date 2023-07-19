@@ -6,6 +6,12 @@
         <title>Kick Imóveis</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="icon" type="image/png" href="imagens/home-button.png"/>
+        <meta name="description" content="Site Imobiliaria" />
+        <meta name="author" content="Lucas Rodrigues Policarpo" />
+        <meta name="keywords" content="html5,css3,javascript,react,front-end,bootstrap" />
+        <meta property="og:title" content="KICK IMÓVEIS">
+        <meta property="og:description" content="Encontre seu lugar no mundo !">
+        <meta property="og:image" content="https://i.postimg.cc/W4715Hzb/previa-pag.png">
     </head>
 
     <body id="top">
@@ -13,10 +19,10 @@
             <div class="toggle" onclick="toggleMenu()"></div><!--toggle-->
             <ul class="main_menu">
                 <li><a onclick="toggleMenu()" target="_blank" href="index_2.html">Comprar</a></li>
-                <li><a onclick="toggleMenu()" href="">Alugar</a></li>
+                <li><a onclick="toggleMenu()" target="_blank" href="index_6.html">Alugar</a></li>
                 <li><a onclick="toggleMenu()" target="_blank" href="index_4.html">Anunciar</a></li>
                 <li><a onclick="toggleMenu()" target="_blank" href="index_3.html">Financiamento</a></li>
-                <li><a onclick="toggleMenu()" href="">Explorar</a></li>
+                <li><a onclick="toggleMenu()" target="_blank" href="index_6.html">Explorar</a></li>
                 <li><a onclick="toggleMenu()" target="_blank" href="index_5.html">Registrar/Entrar</a></li>
             </ul><!--main_menu-->
             <div class="mobile">
@@ -24,7 +30,7 @@
                     <a href="">Anunciar</a>
                 </div>
                 <div>
-                    <a href=""><img src="imagens/logo_white.png" alt=""></a>
+                    <a href="index.html"><img src="imagens/logo_white.png" alt=""></a>
                 </div>
             </div>
         </header>
@@ -32,15 +38,15 @@
 
         <main class="wrap">
             <section class="logo">
-                <img src="./imagens/Black Monoline Real Estate Logo.png" alt="">
+                <a href="index.html"><img src="./imagens/Black Monoline Real Estate Logo.png"></a>
             </section>
             
             <section class="ask">
                 <div class="container">
                     <h2>Encontre seu lugar no mundo !</h2>
                     <div class="btn_01">
-                        <button id="buy">Comprar</button>
-                        <button id="hire">Alugar</button>
+                        <a href="index_2.html"><button id="buy">Comprar</button></a>
+                        <a href=""><button id="hire">Alugar</button></a>
                     </div><!--btn_01-->
                     <form>
                         <input type="text" placeholder="Qual imóvel gostaria de ver hoje ?">
@@ -55,12 +61,12 @@
                 <h2>Comprar</h2>
                 <h2>Alugar</h2>
             </div>
-            <form action="">
+            <form method="post">
                 <label for="">Onde deseja morar ?</label>
                 <input type="text" placeholder="Digite o nome da rua, bairro ou cidade">
 
                 <label for="">Tipo de imóvel</label>
-                <select name="" id="">
+                <select>
                     <option value="">Apartamento</option>
                     <option value="">Casa</option>
                     <option value="">Terreno</option>
@@ -80,16 +86,16 @@
                 
                 <div>
                     <ul>
-                        <li><a id="radar1" href=""><h3>Tour Virtual</h3></a></li>
-                        <li><a id="radar2" href=""><h3>Tour Virtual</h3></a></li>
-                        <li><a id="radar3" href=""><h3>Tour Virtual</h3></a></li>
+                        <li><a id="radar1" href="#"><h3>Tour Virtual</h3></a></li>
+                        <li><a id="radar2" href="#"><h3>Tour Virtual</h3></a></li>
+                        <li><a id="radar3" href="#"><h3>Tour Virtual</h3></a></li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li><a id="radar4" href=""><h3>Tour Virtual</h3></a></li>
-                        <li><a id="radar5" href=""><h3>Tour Virtual</h3></a></li>
-                        <li><a id="radar6" href=""><h3>Tour Virtual</h3></a></li>
+                        <li><a id="radar4" href="#"><h3>Tour Virtual</h3></a></li>
+                        <li><a id="radar5" href="#"><h3>Tour Virtual</h3></a></li>
+                        <li><a id="radar6" href="#"><h3>Tour Virtual</h3></a></li>
                     </ul>
                 </div>
 
@@ -102,8 +108,8 @@
             <div class="container">
 
                 <div class="images">
-                    <img src="./imagens/reforma1.png" alt=""></li>
-                    <img src="./imagens/reforma2.png" alt=""></li>
+                    <img src="./imagens/reforma1.png" alt="">
+                    <img src="./imagens/reforma2.png" alt="">
                 </div>
                 
                 <div class="text">
@@ -122,16 +128,16 @@
                 </div>
                 <div>
                     <ul>
-                        <li><a id="bairro1" href="">Bairro 1</a></li>
-                        <li><a id="bairro2" href="">Bairro 2</a></li>
-                        <li><a id="bairro3" href="">Bairro 3</a></li>
+                        <li><a id="bairro1" href="#">Bairro 1</a></li>
+                        <li><a id="bairro2" href="#">Bairro 2</a></li>
+                        <li><a id="bairro3" href="#">Bairro 3</a></li>
                     </ul>
                 </div>
                 <div>
                     <ul>
-                        <li><a id="bairro4" href="">Bairro 1</a></li>
-                        <li><a id="bairro5" href="">Bairro 2</a></li>
-                        <li><a id="bairro6" href="">Bairro 3</a></li>
+                        <li><a id="bairro4" href="#">Bairro 1</a></li>
+                        <li><a id="bairro5" href="#">Bairro 2</a></li>
+                        <li><a id="bairro6" href="#">Bairro 3</a></li>
                     </ul>
                 </div>
                 <button id="see_more2">Veja mais bairros 	&#10154;</button>
@@ -169,18 +175,18 @@
             <div class="part3">
                 <h2>Baixe nossos aplicativos</h2>
                 <div class="btn1">
-                    <a id="btn_insta" target="_blank" href=""></a>
-                    <a id="btn_twitter" target="_blank" href=""></a>
-                    <a id="btn_face" target="_blank" href=""></a>
-                    <a id="btn_yt" target="_blank" href=""></a>
+                    <a id="btn_insta" target="_blank" href="https://www.instagram.com/lucaspolicarpo97/"></a>
+                    <a id="btn_twitter" target="_blank" href="#"></a>
+                    <a id="btn_face" target="_blank" href="#"></a>
+                    <a id="btn_yt" target="_blank" href="#"></a>
                 </div><!--part3-->
 
                 <div class="btn2">
-                    <a id="btn_apple" target="_blank" href=""></a>
+                    <a id="btn_apple" target="_blank" href="https://www.apple.com/br/"></a>
                 </div><!--btn2-->
 
                 <div class="btn3">
-                    <a id="btn_android" target="_blank" href=""></a>
+                    <a id="btn_android" target="_blank" href="https://play.google.com/store/games?device=windows"></a>
                 </div><!--btn3-->
             </div>
         </footer>

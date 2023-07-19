@@ -96,9 +96,22 @@ header ul li a:hover{
     cursor: pointer;
 }
 
+.ask input{
+    border-radius: 10px;
+    outline: none;
+}
+
 #buy{
     background-color: #1174CF;
     color: #ffffff;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin-right: -5px;
+}
+
+#hire{
+    border-radius: 10px;
+    padding: 0 10px;
 }
 
 .ask input{
@@ -571,9 +584,39 @@ footer a{
     .radar #radar{
         width: 600px;
     }
+
+    .title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .middle .container{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .middle .container .images{
+        flex-direction: column;
+        display: flex;
+    }
+
+    .text{
+        width: 100%;
+    }
+
+    #see_more,#see_more2{
+        margin: auto;
+    }
+
+    footer{
+        padding-left: 80px;
+    }
 }
 
-@media screen and (max-width: 425px){
+@media screen and (max-width: 576px){
     header{
         background-color: #908DFF;
         display: flex;    
@@ -747,6 +790,7 @@ footer a{
     }
     
     footer{
+        margin-left: -80px;
         display: flex;
         flex-direction: column;
         align-items: center;
