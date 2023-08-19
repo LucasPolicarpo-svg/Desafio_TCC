@@ -102,7 +102,7 @@ header ul li a{
 }
 
 header ul li a:hover{
-    font-size: 18px;
+    transform: scale(1.25);
     transition: 0.4s;
 }
 
